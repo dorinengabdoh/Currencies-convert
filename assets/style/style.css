@@ -1,0 +1,40 @@
+body {
+  background-color: #6e6b65ee;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.container {
+  /* padding: 30rem; */
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 34%;
+  margin-top: 2%;
+}
+
+.main-down-container {
+  height: 50%;
+  border:  none;
+  padding-bottom: 22rem;
+  background-color: #fff;
+}
+
+.main-up-container {
+  height: 50%;
+  text-align: center;
+  border: none;
+  padding-bottom: 22rem;
+  background-color: #f55858;
+  background: linear-gradient(to left,  #f55858, #f49391);
+}
+
+select {
+  width: 10%;
+  border: none;
+  top: -20px;
+}
+
