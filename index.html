@@ -2,38 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Currency Converter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
-    <div class="heading">
-        <h1>Currencies Converter</h1>
+  <div class="heading">
+    <h1>Currencies Converter</h1>
+  </div>
+  <div class="container">
+    <div class="main-up-container">
+      <div class="contain">
+        <input type="number" id="amount" placeholder="Enter amount">
+        <select id="from" class="currency-select">
+          <option value="usd">USD($)(£) </option>
+          <option value="eur">EUR (Є)</option>
+          <option value="gbp">GBP (£) </option>
+          <option value="gbp">YEN (¥) </option>
+        </select>
+      </div>
+      
     </div>
-    <div class="container">
-        <div class="main-up-container">
-            <input type="number" id="amount" placeholder="Enter amount">
-            <select id="from" class="currency-select">
-                <option value="usd">USD($)(£) </option>
-                <option value="eur">EUR (Є)</option>
-                <option value="gbp">GBP (£) </option>
-                <option value="gbp">YEN (¥) </option>
-            </select>
-        </div>
-        <div class="main-down-container">
-            <span class="equals">=</span>
-            <select id="to" class="currency-select">
-                <option value="usd">USD($)(£) </option>
-                <option value="eur">EUR (Є)</option>
-                <option value="gbp">GBP (£) </option>
-                <option value="gbp">YEN (¥) </option>
-            </select>
-            <input type="number" id="converted-amount" placeholder="Enter amount">
-        </div>
+    <div class="icon">
+      <i class="fas fa-exchange" style="color: #f49391;"></i>
     </div>
-    <script src="./assets/scripts/scripts.js"></script>
+    <div class="main-down-container">
+      <div class="contain">
+        <input type="number" id="converted-amount" placeholder="Enter amount">
+        <select id="to" class="currency-select">
+          <option value="usd">USD($)(£) </option>
+          <option value="eur">EUR (Є)</option>
+          <option value="gbp">GBP (£) </option>
+          <option value="gbp">YEN (¥) </option>
+        </select>
+      </div>
+
+    </div>
+  </div>
+  <script src="./assets/scripts/scripts.js"></script>
 </body>
 
 </html>
