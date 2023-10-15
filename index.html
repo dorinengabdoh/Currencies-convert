@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
-  <title></title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./assets/style/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currencies Converter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Currency Converter</title>
 </head>
 
 <body>
-  <div class="heading">
-    <h1>Currencies Converter</h1>
-  </div>
-  <div class="container">
-    <div class="main-up-container">
-      <select name="" id="pay-amt">
-        <option value="">USD ($)</option>
-        <option value="">EUR (Є)</option>
-        <option value="">YEN (¥)</option>
-        <option value="">PBG (£)</option>
-      </select>
+    <div class="heading">
+        <h1>Currencies Converter</h1>
     </div>
-    <div class="main-down-container">
-      <select name="" id="pay-amt">
-        <option value="">INR (﷼)</option>
-        <option value="">EUR (Є)</option>
-        <option value="">YEN (¥)</option>
-        <option value="">PBG (£)</option>
-      </select>
+    <div class="container">
+        <div class="main-up-container">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="from" class="currency-select">
+                <option value="usd">USD($)(£) </option>
+                <option value="eur">EUR (Є)</option>
+                <option value="gbp">GBP (£) </option>
+                <option value="gbp">YEN (¥) </option>
+            </select>
+        </div>
+        <div class="main-down-container">
+            <span class="equals">=</span>
+            <select id="to" class="currency-select">
+                <option value="usd">USD($)(£) </option>
+                <option value="eur">EUR (Є)</option>
+                <option value="gbp">GBP (£) </option>
+                <option value="gbp">YEN (¥) </option>
+            </select>
+            <input type="number" id="converted-amount" placeholder="Enter amount">
+        </div>
     </div>
-  </div>
-  <script src="./assets/scripts/scripts.js" type="text/javascript"></script>
+    <script src="./assets/scripts/scripts.js"></script>
 </body>
 
 </html>
