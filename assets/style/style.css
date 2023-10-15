@@ -7,32 +7,56 @@ body {
   padding-top: 1rem;
 }
 
+#menu-btn {
+  padding-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curren {
+  padding-top: -30px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   width: 30%;
   margin-left: 36%;
-  margin-top: 2%;
 }
 
 .main-down-container {
   border: none;
   text-align: center;
-  padding-bottom: 12rem;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
   background-color: #fff;
+  color: #f55858;
 }
 
 .main-up-container {
+  color: #fff;
   text-align: center;
   border: none;
-  padding-bottom: 12rem;
+  padding-bottom: 9.5rem;
   background: linear-gradient(to left, #f55858, #f49391);
 }
 
 select {
   width: 10%;
   border: none;
-  top: -23px;
+}
+#from {
+  color: #fff;
+  border: none;
+  background-color: none;
+}
+
+#to {
+  color: #f55858;
+  border: none;
 }
 
 .icon {
@@ -44,11 +68,16 @@ select {
   position: absolute;
   width: 21px;
   margin-left: 25%;
-  margin-top: 18%;
+  margin-top: 18.5%;
   font-size: 25px;
 }
 
-.contain {
-  padding-top: 150px;
+.contains {
   justify-content: center;
+  padding-top: 100px;
+}
+
+.curren {
+  font-size: 25px;
+  color: #f0ffff98;
 }
