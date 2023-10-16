@@ -31,4 +31,10 @@ function updateConversion() {
   const exchangeRate = exchangeRates[fromCurrency] / exchangeRates[toCurrency];
   const converted = (amount * exchangeRate).toFixed(2);
   convertedAmount.value = converted;
+  // const convert2 = (amount2 * exchangeRate).toFixed(2);
+  // amountInput.value = convert2
 }
+ if (fromCurrencySelect == toCurrencySelect){
+  alert("con not convert to the same currency");
+ }
+ 
