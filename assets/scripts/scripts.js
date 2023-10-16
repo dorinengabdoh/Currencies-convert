@@ -11,7 +11,8 @@ convertedAmount.addEventListener('input', () => {
   const exchangeRate2 = exchangeRates[toCurrencySelect.value] / exchangeRates[fromCurrencySelect.value]
   const convert2 = (amount2 * exchangeRate2).toFixed(2)
   amountInput.value = convert2
-  return convert2,
+  return convert2
+  ,
   updateConversion()
 })
 
