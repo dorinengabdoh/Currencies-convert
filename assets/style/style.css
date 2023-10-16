@@ -145,6 +145,11 @@ select {
     margin: 0 auto;
     overflow: hidden;
   }
+
+  .heading {
+    text-align: center;
+    padding-top: 2rem;
+  }
 }
 
 @media screen and (min-width: 1894) {
@@ -152,5 +157,10 @@ select {
   .icon {
     margin-left: 200px;
     overflow: hidden;
+  }
+
+  .heading {
+    text-align: center;
+    padding-top: 2rem;
   }
 }
