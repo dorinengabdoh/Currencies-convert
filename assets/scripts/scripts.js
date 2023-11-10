@@ -14,7 +14,6 @@ convertedAmount.addEventListener('input', () => {
   return convert2,
   updateConversion()
 })
-
 const exchangeRates = {
   usd: 1,
   eur: 0.95,
@@ -22,18 +21,30 @@ const exchangeRates = {
   yen: 149.4
 }
 
+  let converted;
 function updateConversion () {
   if (fromCurrencySelect.value === toCurrencySelect.value) {
     alert('con not convert to the same currency')
     return
   }
   const amount = parseFloat(amountInput.value) || 0
+  console.log(amount);
   const fromCurrency = fromCurrencySelect.value
   const toCurrency = toCurrencySelect.value
-  // console.log (amount2);
 
-  // calculate a converted value
   const exchangeRate = exchangeRates[fromCurrency] / exchangeRates[toCurrency]
-  const converted = (amount * exchangeRate).toFixed(2)
-  convertedAmount.value = converted
+   converted = (amount * exchangeRate).toFixed(2)
+  convertedAmount.value = converted;
+}
+console.log(converted);
+
+
+function updateSecondConverter(){
+  if (fromCurrencySelect.value === toCurrencySelect.value) {
+    alert('con not convert to the same currency')
+    return
+  }
+  const toAmount = parseFloat(convertedAmount.value) || 0  
+  console.log(toAmount);
+
 }
